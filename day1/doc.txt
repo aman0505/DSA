@@ -1,0 +1,49 @@
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+public:
+You must declare the main method as public because the JVM needs 
+to access it to start the program.
+
+class:
+keyword used to declare a class.
+A class is a blueprint for creating objects. It groups data (variables) 
+and functions (methods) together.
+
+Main:
+This is the name of the class.
+Use: In Java, the filename and public class name must match. So, this file 
+should be saved as Main.java.
+
+{ }:
+These are curly braces that define a block of code.
+Used to group the code belonging to a class or method.
+
+public:
+Access modifier for the method
+It ensures the main method is visible to the JVM (which is
+outside the class when executing the program).
+
+static:
+This means the method belongs to the class, not to any instance (object).
+Use: JVM can call the main method without creating an object of the class.
+
+void:
+Return type of the method.
+Use: The JVM starts executing the program from this method.
+
+(String[] args):
+Meaning: A parameter that takes command-line arguments.
+String[] is an array of strings.
+args is just a name (you could name it anything like data, arguments, etc.).
+
+If you run your program as java Main Hello World, then:
+args[0] is "Hello"
+args[1] is "World"
+
+System.out.println("Hello, World!");
+System: A built-in class in Java from the java.lang package.
+out: A static object of type PrintStream, part of System, used to send output to the console.
+println(): A method of PrintStream that prints text followed by a new line.

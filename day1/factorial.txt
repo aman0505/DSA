@@ -1,0 +1,18 @@
+
+class Main {
+    
+    
+    static int factrioal(int n){
+        if(n==0 || n==1){
+            return 1;
+        }
+        return n* factrioal(n-1);
+    }
+    
+    
+    public static void main(String[] args) {
+        
+        int a=factrioal(4);
+        System.out.println(a);
+    }
+}
