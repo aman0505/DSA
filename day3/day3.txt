@@ -1,0 +1,51 @@
+There are three types of solutions for any problem
+1) Brute force
+2) Better
+3) Optimal
+
+* For brute force most of the solutions can be written in the two loops
+
+  PATTERN mapping
+  public class Main {
+    public static void main(String[] args) {
+      for(int i = 1; i <= 5; i++){
+        for(int j = 1; j <= 5; j++){
+          if(i==1 || i==5 || j==1 || j==5){
+            System.out.print("* ");
+          } else if(i ==2 || {
+          System.out.print("  ");
+          }
+        }
+        System.out.println();
+      }
+    }
+}
+Output:
+
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+
+wheteher it is a prime or nott
+import java.util.*;
+class Main{
+    boolean prime(int n){
+        for(int i = 2;i<n;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+        public static void main(String[] args){
+           Scanner sc = new Scanner(System.in);
+           int n = sc.nextInt();
+           Main obj = new Main();
+           System.out.println(obj.prime(n));
+    }
+}
+
+To print prime numbers
+to print amstrong number
